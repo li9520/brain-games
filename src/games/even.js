@@ -3,13 +3,11 @@ import { getRandomValue, isEven } from '../utils.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 const maxValue = 100;
-let expression;
 
-const getQuestion = () => {
-  expression = getRandomValue(maxValue);
-  return expression;
+const getQuestionAndAnswer = () => {
+  const expression = getRandomValue(maxValue);
+  const answer = ((isEven(expression)) ? 'yes' : 'no');
+  return [expression, answer];
 };
 
-const getAnswer = () => ((isEven(expression)) ? 'yes' : 'no');
-
-export default () => { runGame(description, getQuestion, getAnswer); };
+export default () => { runGame(description, getQuestionAndAnswer); };
