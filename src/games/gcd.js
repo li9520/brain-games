@@ -10,10 +10,11 @@ const gcd = (value1, value2) => {
 
 const description = 'Find the greatest common divisor of given numbers.';
 const maxValue = 100;
+const minValue = 0;
 
 const getQuestionAndAnswer = () => {
-  const value1 = getRandomValue(maxValue);
-  const value2 = getRandomValue(maxValue);
+  const value1 = getRandomValue(minValue, maxValue);
+  const value2 = getRandomValue(minValue, maxValue);
   const expression = `${value1} ${value2}`;
   const answer = String(gcd(value1, value2));
   return [expression, answer];

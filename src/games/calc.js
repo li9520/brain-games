@@ -16,11 +16,13 @@ const calc = (value1, value2, symbol) => {
 
 const description = 'What is the result of the expression?';
 const maxValue = 10;
+const minValue = 0;
+
 const op = ['+', '-', '*', '/'];
 
 const getQuestionAndAnswer = () => {
-  const operand1 = getRandomValue(maxValue);
-  const operand2 = getRandomValue(maxValue);
+  const operand1 = getRandomValue(minValue, maxValue);
+  const operand2 = getRandomValue(minValue, maxValue);
   const operation = op[getRandomIndex(op)];
   const expression = (`${operand1} ${operation} ${operand2}`);
   const answer = String(calc(operand1, operand2, operation));
