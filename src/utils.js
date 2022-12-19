@@ -3,4 +3,19 @@ const getRandomValue = (min, max) => Math.floor(Math.random() * (max - min) + mi
 const getRandomIndex = (arr) => Math.floor(Math.random() * arr.length);
 const isEven = (value) => (value % 2 === 0);
 
-export { getRandomValue, getRandomIndex, isEven };
+const isPrime = (value) => {
+  if (value < 2) {
+    return false;
+  }
+  const sqrtValue = Math.sqrt(value);
+  for (let i = 2; i <= sqrtValue; i += 1) {
+    if (value % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+export {
+  getRandomValue, getRandomIndex, isEven, isPrime,
+};
