@@ -18,7 +18,7 @@ const description = 'What is the result of the expression?';
 const maxValue = 10;
 const minValue = 0;
 
-const op = ['+', '-', '*', '/'];
+const op = ['+', '-', '*'];
 
 const getQuestionAndAnswer = () => {
   const operand1 = getRandomValue(minValue, maxValue);
