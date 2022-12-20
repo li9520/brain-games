@@ -1,8 +1,69 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/li9520/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/li9520/frontend-project-44/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/c4fda9d52b62945c826c/maintainability)](https://codeclimate.com/github/li9520/frontend-project-44/maintainability)
-https://asciinema.org/a/mruhdo9rvkhNqwQv1NGRS8vmn
-https://asciinema.org/a/BQW5J3tv6Wse4wC8xceEB2JGG
-https://asciinema.org/a/FI5l1oACpUwtfGyeurUzRIhCm
-https://asciinema.org/a/Fafcg1zYtudMEfwDhFOV4aPcG
-<a href="https://asciinema.org/a/546697" target="_blank"><img src="https://asciinema.org/a/546697.svg" /></a>
+[![Actions Status](https://github.com/li9520/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/li9520/frontend-project-44/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/c4fda9d52b62945c826c/maintainability)](https://codeclimate.com/github/li9520/frontend-project-44/maintainability)
+
+# Brain-games. Игры разума
+«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
+
+Игры:
+- Калькулятор. Арифметические выражения, которые необходимо вычислить.
+- Прогрессия. Поиск пропущенных чисел в последовательности чисел.
+- Определение четного числа.
+- Определение наибольшего общего делителя.
+- Определение простого числа.
+
+## Установка
+- Клонируете репозиторий
+- Переходите в корневую директорию проекта `cd brain-games`
+- Используйте команду `make install`
+- Установите пакет в систему с помощью `npm link`. Может потребовать запуск с `sudo`.
+
+## Игра: "Проверка на четность"
+### Описание игры
+В игре выводится случайное число, а игрок должен ответить: чётное оно (ответ "yes") или не чётное (ответ "no").  
+Для запуска игры __"Проверка на четность"__ нужно набрать:
+```
+brain-even
+```
+### Пример запуска игры
+[![asciicast](https://asciinema.org/a/nrjMNXNsGfbwFT6ZnSfGOK4PB.svg)](https://asciinema.org/a/nrjMNXNsGfbwFT6ZnSfGOK4PB)
+
+## Игра: "Калькулятор"
+### Описание игры
+В игре выводится арифметическое выражение из двух случайных чисел, результат этого выражения игрок должен вычислить и записать правильный ответ.  
+Для запуска игры __"Калькулятор"__ нужно набрать:
+```
+brain-calc
+```
+### Пример запуска игры
+[![asciicast](https://asciinema.org/a/EGoGYmfE0GTwOHgx79Ux7IlYR.svg)](https://asciinema.org/a/EGoGYmfE0GTwOHgx79Ux7IlYR)
+
+## Игра: "Наибольший общий делитель (НОД)"
+### Описание игры
+В игре выводится пара случайных чисел, а игрок должен вычислить наибольший общий делитель для этих чисел и записать правильный ответ.  
+Для запуска игры __"Наибольший общий делитель (НОД)"__ нужно набрать:
+```
+brain-gcd
+```
+### Пример запуска игры
+[![asciicast](https://asciinema.org/a/gkxjDAB0Dd3uIG2whF2EoX0l1.svg)](https://asciinema.org/a/gkxjDAB0Dd3uIG2whF2EoX0l1)
+
+## Игра: "Арифметическая прогрессия"
+### Описание игры
+В игре выводится арифметическая прогрессия. Начало, длина и шаг прогрессии выбирается случайным образом. Игроку требуется вычислить одно из чисел прогрессии, которое будет скрыто двумя точками.   
+Для запуска игры __"Арифметическая прогрессия"__ нужно набрать:
+```
+brain-progression
+```
+### Пример запуска игры
+[![asciicast](https://asciinema.org/a/lr0l2BC73mN8inOXHBCGUWn3y.svg)](https://asciinema.org/a/lr0l2BC73mN8inOXHBCGUWn3y)
+
+## Игра: "Простое ли число?"
+### Описание игры
+В игре выводится случайное число, а игрок должен ответить: простое оно (ответ "yes") или нет (ответ "no").  
+Для запуска игры **"Простое ли число?"** нужно набрать:  
+Для запуска игры __"Простое ли число?"__ нужно набрать:
+```
+brain-progression
+```
+### Пример запуска игры
+[![asciicast](https://asciinema.org/a/546697.svg)](https://asciinema.org/a/546697)
